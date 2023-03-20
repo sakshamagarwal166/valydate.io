@@ -1,0 +1,326 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#navbar{
+    /* text-decoration: none; */
+    display: flex;
+    align-items: center;
+    /* flex-direction: row; */
+    justify-content:space-around;
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0px;
+    opacity: 0.9;
+    /* z-index: -1; */
+    /* opacity: 0.6; */
+}
+#navbar::before{
+    /* display:flex; */
+    content: "";
+    background-color: black;
+    position: absolute;
+    /* align-items: center; */
+    /* text-decoration: none; */
+    /* position:fixed; */
+    /* align-items: flex-end; */
+    
+    top:0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#logo img:hover{
+    cursor: pointer;
+}
+nav ul{
+    display: flex;
+    margin: 5px 20px;
+}
+
+ul li{
+    
+    list-style: none;
+    font-size: 1.2rem;
+}
+ul li a{
+    padding: 7px;
+    color: white;
+    margin: 18px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+ul li a:hover{
+    color: black;
+    background-color: azure;
+}
+#logo{
+    /* align-items: center; */
+    /* display: flex; */
+    /* margin-left: 200px; */
+    /* left: 50%; */
+    /* align-self: flex-start; */
+    margin: 2px 2px;
+}
+#logo img{
+    height:50px;
+    width:150px;
+    margin: 2px 4px;
+    padding: 4px 8px;
+}
+/* #buttons{
+    align-self: flex-end;
+
+} */
+
+#home{
+    padding: 0px 0px;
+    margin: 0px 0px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height:90%;
+    /* display: flex; */
+    /* border: 2px solid red; */
+    /* background-color: rgb(0, 0, 0); */
+}
+/* #home img{
+    padding: 0px 0px;
+    display:flex;
+    margin:0px 0px;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+} */
+#home::before{
+    /* position: relative; */
+    /* display: flex; */
+    content: "";
+    /* background: url('../pizza1.jpeg') no-repeat center center/cover; */
+    position:absolute;
+    top:0px;
+    left: 0px;
+    /* height: 732px; */
+    width: 100%;
+    z-index: -1;
+    /* opacity: 0.78; */
+}
+#services{
+    margin:3px 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#services .box{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* border: 2px solid red; */
+    height: 35rem;
+    width: 23rem;
+    /* justify-content: center; */
+    /* width: 40%; */
+    padding: 30px;
+    margin: 3px 5px;
+    border-radius: 10px;
+
+    justify-content:center;
+    flex-direction: column;
+    background:fixed; 
+    background-color: #f8f0f0;
+}
+#services .box img{
+    height:130px;
+    margin: auto;
+    display: block;
+}
+.h-primary{
+    text-align: center;
+    /* font-family: 'Ubuntu Condensed', sans-serif; */
+    font-size: 45px;
+    padding: 12px;
+    margin: 25px 0px;
+}
+.h-secondary{
+    text-align: center;
+    /* font-family: 'Ubuntu Condensed', sans-serif; */
+    font-size: 30px;
+    padding: 12px;
+}
+#bprac{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#pracdiv{
+    /* display: flex; */
+    width: 70%;
+    border-radius: 10px;
+    /* border: 2px solid red; */
+    margin:30px 30px;
+    /* align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+    padding: 30px;
+    background-color: #f8f0f0;
+}
+.content li{
+    /* display: flex; */
+    /* flex-direction: column; */
+    list-style-type: circle;
+    vertical-align: middle;
+    
+}
+.content li ul li{
+    /* display: flex; */
+    /* flex-direction: column; */
+    list-style-type: circle;
+    vertical-align: middle;
+    
+}
+
+#careers{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+}
+
+#careers::before{
+    /* display: flex; */
+    content: "";
+    /* position:static; */
+    width: 100%;
+    height: 100%;
+    /* z-index: -1; */
+    /* opacity: 0.7; */
+    /* background: url('../contact.jpeg') no-repeat center center/cover ; */
+}
+
+#careers-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    
+}
+
+#careers-box form{
+    width: 40%;
+    /* font-family: 'Ubuntu Condensed', sans-serif; */
+}
+
+#careers-box label{
+    font-size: 1.2rem;
+    /* font-family: 'Ubuntu Condensed', sans-serif; */
+}
+
+#careers input,textarea{
+    /* display: block; */
+    padding: 5px 10px;
+    width: 100%;
+    /* font-family: 'Ubuntu Condensed', sans-serif; */
+    font-size: 1.1rem;
+
+}
+#careers-div{
+    width: 60%;
+    border-radius: 10px;
+    margin:5px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #f8f0f0;
+}
+
+#contact{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+}
+
+#contact::before{
+    /* display: flex; */
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../contact.jpeg') no-repeat center center/cover ;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    
+}
+
+#contact-box form{
+    width: 40%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+#contact-box label{
+    font-size: 1.2rem;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+#contact input,textarea{
+    display: block;
+    padding: 5px 10px;
+    width: 100%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 1.1rem;
+
+}
+
+#contact-div{
+    border-radius: 10px;
+    margin:30px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #ffffff;
+}
+/* #contact-div p{
+    text-align: center;
+} */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 5px 30px;
+}
+#practices-start{
+    border: 12px solid transparent;
+}
+#services-start{
+    border: 12px solid transparent;
+}
+#careers-start{
+    border: 14px solid transparent;
+}
+#contact-start{
+    border: 14px solid transparent;
+}
+
